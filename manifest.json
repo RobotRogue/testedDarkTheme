@@ -3,5 +3,19 @@
   "name": "Tested.com Larger Video Player",
   "version": "0.1.0",
   "default_locale": "en",
-  "description": "A simple Chrome extension for Premium Members of Tested.com who want to see their premium content videos in a larger view and with a darker page style."
+  "description": "A simple Chrome extension for Premium Members of Tested.com who want to see their premium content videos in a larger view and with a darker page style.",
+
+  "content_scripts": [
+    {
+      "css": [
+        "testedDark.css"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "https://www.tested.com/*"
+      ]
+    }
+  ]
 }
