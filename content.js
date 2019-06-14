@@ -37,4 +37,33 @@ javascript: (function() {
   if (carouselBack) {
     carouselBack.setAttribute("style", "background: #424242 !important;");
   }
+  var titleLink = document.querySelector("a.title");
+  if (titleLink) {
+    titleLink.setAttribute("style", "color: #cacaca;");
+  }
 })();
+
+// javascript: (function() {
+//   document.querySelector("#id_term").setAttribute("style", "width: 252px;");
+//   document
+//     .querySelector("div.l-col-fluid")
+//     .setAttribute("style", "width: 1050px; height: 610px;");
+//   document.querySelector("aside.l-col-fixed").className = "l-col-fluid";
+//   document
+//     .querySelector("#panel")
+//     .setAttribute(
+//       "style",
+//       "background: url(https://d2rormqr1qwzpz.cloudfront.net/static/site/img/layout/bg-grid-alt.png) #101010 !important;"
+//     );
+//   document
+//     .querySelector("section.upper")
+//     .setAttribute("style", "background: #101010 !important;");
+//   document
+//     .querySelector(".featured-publishable")
+//     .setAttribute("style", "background: #424242 !important;");
+//   document.querySelector(".description").setAttribute("style", "color: white;");
+//   document
+//     .querySelector(".promo-carousel-revamp")
+//     .setAttribute("style", "background: #424242 !important;");
+//   document.querySelector("a.title").setAttribute("style", "color: #cacaca;");
+// })();
