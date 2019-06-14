@@ -41,6 +41,12 @@ javascript: (function() {
   if (titleLink) {
     titleLink.setAttribute("style", "color: #cacaca;");
   }
+  document
+    .querySelector("span.author")
+    .setAttribute("style", "color: #e05e00;");
+  document
+    .querySelector("a.comment-count")
+    .setAttribute("style", "color: #e05e00;");
 })();
 
 // javascript: (function() {
@@ -66,4 +72,8 @@ javascript: (function() {
 //     .querySelector(".promo-carousel-revamp")
 //     .setAttribute("style", "background: #424242 !important;");
 //   document.querySelector("a.title").setAttribute("style", "color: #cacaca;");
+//   document.querySelector("span.author").setAttribute("style", "color: #e05e00;");
+//   document
+//     .querySelector("a.comment-count")
+//     .setAttribute("style", "color: #e05e00;");
 // })();
