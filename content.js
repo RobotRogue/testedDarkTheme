@@ -1,4 +1,8 @@
 javascript: (function() {
+  var searchBar = document.querySelector("#id_term");
+  if (searchBar) {
+    searchBar.setAttribute("style", "width: 252px;");
+  }
   var playerContainer = document.querySelector("div.l-col-fluid");
   if (playerContainer) {
     playerContainer.setAttribute("style", "width: 1050px; height: 610px;");
