@@ -13,7 +13,10 @@ javascript: (function() {
   }
   var background = document.querySelector("#panel");
   if (background) {
-    background.setAttribute("style", "background: #101010 !important;");
+    background.setAttribute(
+      "style",
+      "background: url(https://d2rormqr1qwzpz.cloudfront.net/static/site/img/layout/bg-grid-alt.png) #101010 !important;"
+    );
   }
   var upperBackground = document.querySelector("section.upper");
   if (upperBackground) {
