@@ -51,8 +51,8 @@
 
 javascript: (function() {
   var featureVideo = document.querySelector('.featured-publishable-video')
-  if (featureVideo) {
   document.querySelector("#id_term").setAttribute("style", "width: 252px;");
+  if (featureVideo) {
   document
     .querySelector("div.l-col-fluid")
     .setAttribute("style", "width: 1050px; height: 610px;");
