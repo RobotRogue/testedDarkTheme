@@ -1,9 +1,12 @@
 javascript: (function() {
+  // Modifies styling on every page regardless
   document.querySelector("#id_term").setAttribute("style", "width: 252px;");
   document
     .querySelector(".header-sitenav .subscribe a")
     .setAttribute("style", "color: #00ccff;");
 
+
+  // Below applies styling to pages that contain 'feature-publishable-video' selector
   var hasFeatureVideo = document.querySelector(".featured-publishable-video");
   if (hasFeatureVideo) {
     var vidPlayer = document.querySelector("div.l-col-fluid");
@@ -34,6 +37,21 @@ javascript: (function() {
       articleContainer.setAttribute("style", "background: #424242 !important;");
     }
 
+    var descriptionTitle = document.querySelector("a.title");
+    if (descriptionTitle) {
+      descriptionTitle.setAttribute("style", "color: #cacaca;");
+    }
+
+    var author = document.querySelector("span.author");
+    if (author) {
+      author.setAttribute("style", "color: #e05e00;");
+    }
+
+    var commentCounter = document.querySelector("a.comment-count");
+    if (commentCounter) {
+      commentCounter.setAttribute("style", "color: #e05e00;");
+    }
+
     var descriptionText = document.querySelector(".description");
     if (descriptionText) {
       descriptionText.setAttribute("style", "color: white;");
@@ -50,21 +68,6 @@ javascript: (function() {
         "style",
         "background: #424242 !important;"
       );
-    }
-
-    var descriptionTitle = document.querySelector("a.title");
-    if (descriptionTitle) {
-      descriptionTitle.setAttribute("style", "color: #cacaca;");
-    }
-
-    var author = document.querySelector("span.author");
-    if (author) {
-      author.setAttribute("style", "color: #e05e00;");
-    }
-
-    var commentCounter = document.querySelector("a.comment-count");
-    if (commentCounter) {
-      commentCounter.setAttribute("style", "color: #e05e00;");
     }
   }
 })();
