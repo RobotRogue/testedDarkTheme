@@ -62,12 +62,13 @@ javascript: (function() {
       promoCarousel.setAttribute("style", "background: #424242 !important;");
     }
 
-    var commentsContainer = document.querySelector(".comments-wrap");
-    if (commentsContainer) {
-      commentsContainer.setAttribute(
-        "style",
-        "background: #424242 !important;"
-      );
-    }
+    // Need to debug why this isn't applying on pageload...
+    // var commentsContainer = document.querySelector(".comments-wrap");
+    // if (commentsContainer) {
+    //   commentsContainer.setAttribute(
+    //     "style",
+    //     "background: #424242"
+    //   );
+    // }
   }
 })();
