@@ -13,16 +13,21 @@ javascript: (function() {
     );
   }
 
-  var popularNews = document.querySelector('section.popular-news');
+  var titleBar = document.querySelector("section.upper");
+  if (titleBar) {
+    titleBar.setAttribute("style", "background: #000000 !important;");
+  }
+
+  var popularNews = document.querySelector("section.popular-news");
   if (popularNews) {
     popularNews.setAttribute("style", "background: #424242 !important;");
   }
 
   // Warning: This is inherently very slow to run.
-  var popularNewsListItems = document.getElementsByClassName('title');
-  if (popularNewsListItems) {
-    for (var i = 0; i < popularNewsListItems.length; i++) {
-      popularNewsListItems[i].setAttribute("style", "color: #cacaca;");
+  var activeLinkText = document.getElementsByClassName("title");
+  if (activeLinkText) {
+    for (var i = 0; i < activeLinkText.length; i++) {
+      activeLinkText[i].setAttribute("style", "color: #1da1f2;");
     }
   }
 
@@ -37,15 +42,10 @@ javascript: (function() {
     }
   }
 
-  var articleText = document.getElementsByClassName(
-    "parchment-content"
-  );
+  var articleText = document.getElementsByClassName("parchment-content");
   if (articleText) {
     for (var i = 0; i < articleText.length; i++) {
-      articleText[i].setAttribute(
-        "style",
-        "color: #cacaca !important;"
-      );
+      articleText[i].setAttribute("style", "color: #cacaca !important;");
     }
   }
 
@@ -57,6 +57,21 @@ javascript: (function() {
   var contactBox = document.querySelector(".aside-contact");
   if (contactBox) {
     contactBox.setAttribute("style", "background: #424242 !important;");
+  }
+
+  var podcastWrapper = document.querySelector(".featured-publishable-podcast");
+  if (podcastWrapper) {
+    podcastWrapper.setAttribute("style", "background: #424242 !important;");
+  }
+
+  var podcastWrapperText = document.querySelector("p.description");
+  if (podcastWrapperText) {
+    podcastWrapperText.setAttribute("style", "color: #cacaca;");
+  }
+
+  var oolaya = document.querySelector('iframe[src*="ooyala"]');
+  if (oolaya) {
+    oolaya.setAttribute("style", "display: none");
   }
 
   // Below applies styling to pages that contain 'feature-publishable-video' selector
@@ -89,13 +104,6 @@ javascript: (function() {
     var videoBlurb = document.querySelector("aside.l-col-fixed");
     if (videoBlurb) {
       videoBlurb.className = "l-col-fluid";
-    }
-
-
-
-    var titleBar = document.querySelector("section.upper");
-    if (titleBar) {
-      titleBar.setAttribute("style", "background: #000000 !important;");
     }
 
     var articleContainer = document.querySelector(".featured-publishable");
