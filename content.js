@@ -42,6 +42,11 @@ javascript: (function() {
     }
   }
 
+  var adSpamBlock = document.querySelector("aside.l-lastcol section.well");
+  if (adSpamBlock) {
+    adSpamBlock.remove();
+  }
+
   var articleText = document.getElementsByClassName("parchment-content");
   if (articleText) {
     for (var i = 0; i < articleText.length; i++) {
@@ -72,6 +77,11 @@ javascript: (function() {
   var oolaya = document.querySelector('iframe[src*="ooyala"]');
   if (oolaya) {
     oolaya.setAttribute("style", "display: none");
+  }
+
+  var videoArchive = document.getElementById("video-archive");
+  if (videoArchive) {
+    videoArchive.setAttribute("style", "background: #424242 !important;");
   }
 
   // Below applies styling to pages that contain 'feature-publishable-video' selector
