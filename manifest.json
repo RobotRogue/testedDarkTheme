@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Tested.com Larger Video Player",
+  "name": "Tested.com Dark Mode",
   "version": "0.1.0",
-  "description": "A simple Chrome extension for Premium Members of Tested.com who want to see their premium content videos in a larger view and with a darker page style.",
+  "description": "An extension for visitors of Tested.com who want to see their videos in a larger view and also view the site with a darker page style.",
 
   "content_scripts": [
     {

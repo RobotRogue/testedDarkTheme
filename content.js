@@ -5,10 +5,82 @@ javascript: (function() {
     .querySelector(".header-sitenav .subscribe a")
     .setAttribute("style", "color: #00ccff;");
 
+  var pageBackground = document.querySelector("#panel");
+  if (pageBackground) {
+    pageBackground.setAttribute(
+      "style",
+      "background: url(https://d2rormqr1qwzpz.cloudfront.net/static/site/img/layout/bg-grid-alt.png) #101010 !important;"
+    );
+  }
+
+  var popularNews = document.querySelector('section.popular-news');
+  if (popularNews) {
+    popularNews.setAttribute("style", "background: #424242 !important;");
+  }
+
+  // Warning: This is inherently very slow to run.
+  var popularNewsListItems = document.getElementsByClassName('title');
+  if (popularNewsListItems) {
+    for (var i = 0; i < popularNewsListItems.length; i++) {
+      popularNewsListItems[i].setAttribute("style", "color: #cacaca;");
+    }
+  }
+
+  // Warning: This is inherently very slow to run.
+  var articleWrapper = document.getElementsByClassName("publishable");
+  if (articleWrapper) {
+    for (var i = 0; i < articleWrapper.length; i++) {
+      articleWrapper[i].setAttribute(
+        "style",
+        "background: #424242 !important;"
+      );
+    }
+  }
+
+  var articleText = document.getElementsByClassName(
+    "parchment-content"
+  );
+  if (articleText) {
+    for (var i = 0; i < articleText.length; i++) {
+      articleText[i].setAttribute(
+        "style",
+        "color: #cacaca !important;"
+      );
+    }
+  }
+
+  var recentVideos = document.querySelector("section.recent-videos");
+  if (recentVideos) {
+    recentVideos.setAttribute("style", "background: #424242 !important;");
+  }
+
+  var contactBox = document.querySelector(".aside-contact");
+  if (contactBox) {
+    contactBox.setAttribute("style", "background: #424242 !important;");
+  }
 
   // Below applies styling to pages that contain 'feature-publishable-video' selector
   var hasFeatureVideo = document.querySelector(".featured-publishable-video");
   if (hasFeatureVideo) {
+    var premVidContainer = document.querySelector(
+      "section.is_premium_content > div.well-header-wrap"
+    );
+    if (premVidContainer) {
+      var premiumTile = document.createElement("div");
+      premiumTile.innerHTML = "PREMIUM";
+      premiumTile.setAttribute("class", "well-subheader");
+      premiumTile.setAttribute(
+        "style",
+        "color: #00ccff; border-style: solid; border-width: 1px; border-color: #00ccff;"
+      );
+      premVidContainer.appendChild(premiumTile);
+    }
+
+    var premiumFlag = document.querySelector(".prem-flag");
+    if (premiumFlag) {
+      premiumFlag.remove();
+    }
+
     var vidPlayer = document.querySelector("div.l-col-fluid");
     if (vidPlayer) {
       vidPlayer.setAttribute("style", "width: 1050px; height: 610px;");
@@ -19,13 +91,7 @@ javascript: (function() {
       videoBlurb.className = "l-col-fluid";
     }
 
-    var pageBackground = document.querySelector("#panel");
-    if (pageBackground) {
-      pageBackground.setAttribute(
-        "style",
-        "background: url(https://d2rormqr1qwzpz.cloudfront.net/static/site/img/layout/bg-grid-alt.png) #101010 !important;"
-      );
-    }
+
 
     var titleBar = document.querySelector("section.upper");
     if (titleBar) {
@@ -62,12 +128,13 @@ javascript: (function() {
       promoCarousel.setAttribute("style", "background: #424242 !important;");
     }
 
-    // Need to debug why this isn't applying on pageload...
-    // var commentsContainer = document.querySelector(".comments-wrap");
+    // var commentsContainer = document.querySelector(
+    //   "#comments section.comments-wrap"
+    // );
     // if (commentsContainer) {
     //   commentsContainer.setAttribute(
     //     "style",
-    //     "background: #424242"
+    //     "background: #424242 !important;"
     //   );
     // }
   }
