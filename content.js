@@ -84,6 +84,40 @@ javascript: (function() {
     videoArchive.setAttribute("style", "background: #424242 !important;");
   }
 
+  // The stupid NEXT VIDEO Promo box code:
+  var promoBox = document.querySelector('.js-promo-container');
+  if (promoBox) {
+    var contentToMove = document.querySelector(
+      ".js-promo-container section.more"
+    );
+    var cloneContent = contentToMove.cloneNode(true);
+
+    // Create the aside element to put the content into
+    var newAsideBox = document
+      .querySelector(".js-promo-container .l-row-fixed-fluid")
+      .appendChild(document.createElement("aside"));
+
+    newAsideBox.setAttribute("class", "l-col-fixed");
+    newAsideBox.appendChild(cloneContent);
+
+    document.querySelector(
+      ".js-promo-container .l-row-fixed-fluid section.more"
+    ).remove();
+
+    document
+      .querySelector(".js-promo-container .more")
+      .classList.add("promo-more");
+
+    document.querySelector(".promo-more").classList.remove("more");
+    document
+      .querySelector(".promo-more")
+      .setAttribute(
+        "style",
+        "-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background: #f000000;min-height: 100px;padding-left: 0px;position: absolute;bottom: 25px;width: 350px;padding-top: 0px;top: 630px;height: 190px;"
+      );
+  }
+
+
   // Below applies styling to pages that contain 'feature-publishable-video' selector
   var hasFeatureVideo = document.querySelector(".featured-publishable-video");
   if (hasFeatureVideo) {
