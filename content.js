@@ -44,7 +44,7 @@ javascript: (function() {
 
   var adSpamBlock = document.querySelector("aside.l-lastcol section.well");
   if (adSpamBlock) {
-    adSpamBlock.remove();
+    adSpamBlock.setAttribute("style", "display: none");
   }
 
   var articleText = document.getElementsByClassName("parchment-content");
