@@ -27,24 +27,24 @@ javascript: (function() {
     popularNews.setAttribute("style", "background: #424242 !important;");
   }
 
-  // Warning: This is inherently very slow to run.
-  var activeLinkText = document.getElementsByClassName("title");
-  if (activeLinkText) {
-    for (var i = 0; i < activeLinkText.length; i++) {
-      activeLinkText[i].setAttribute("style", "color: #cacaca;"); // Twitter blue.
-    }
-  }
+  // // Warning: This is inherently very slow to run.
+  // var activeLinkText = document.getElementsByClassName("title");
+  // if (activeLinkText) {
+  //   for (var i = 0; i < activeLinkText.length; i++) {
+  //     activeLinkText[i].setAttribute("style", "color: #cacaca;"); // Twitter blue.
+  //   }
+  // }
 
-  // Warning: This is inherently very slow to run.
-  var articleWrapper = document.getElementsByClassName("publishable");
-  if (articleWrapper) {
-    for (var i = 0; i < articleWrapper.length; i++) {
-      articleWrapper[i].setAttribute(
-        "style",
-        "background: #424242 !important; overflow: hidden;"
-      );
-    }
-  }
+  // // Warning: This is inherently very slow to run.
+  // var articleWrapper = document.getElementsByClassName("publishable");
+  // if (articleWrapper) {
+  //   for (var i = 0; i < articleWrapper.length; i++) {
+  //     articleWrapper[i].setAttribute(
+  //       "style",
+  //       "background: #424242 !important; overflow: hidden;"
+  //     );
+  //   }
+  // }
 
   var adSpamBlock = document.querySelector("aside.l-lastcol section.well");
   if (adSpamBlock) {

@@ -66,3 +66,12 @@ article.spread .author {
     margin: 10px 0 20px;
     color: #e05e00 !important;
 }
+
+.title {
+    color: #cacaca;
+}
+
+.publishable {
+    background: #424242 !important;
+    overflow: hidden;
+}
