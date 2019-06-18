@@ -111,6 +111,25 @@ javascript: (function() {
     }
   }
 
+  // var articlePremiumContainer = document.querySelectorAll(
+  //   ".js-promo-container.link-publishable.is_premium_content"
+  // );
+  // if (articlePremiumContainer) {
+  //   for (var i = 0; i < articlePremiumContainer.length; i++) {
+  //     if (articlePremiumContainer[i].classList.contains("is_premium_content")) {
+  //       articlePremiumContainer[i].querySelector("img.prem-flag").remove();
+
+  //       var premiumFlag = document.createElement("div");
+  //       premiumFlag.innerHTML = "PREMIUM";
+  //       premiumFlag.setAttribute("class", "corner-ribbon");
+  //       articlePremiumContainer[i].insertBefore(
+  //         premiumFlag,
+  //         articlePremiumContainer[i].childNodes[0]
+  //       );
+  //     }
+  //   }
+  // }
+
   // // The stupid NEXT VIDEO Promo box code:
   // // .
   // var promoBox = document.querySelector('.js-promo-container');
