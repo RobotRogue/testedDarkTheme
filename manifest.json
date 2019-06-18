@@ -7,7 +7,7 @@
   "content_scripts": [
     {
       "css": [
-        "testedDark.css"
+        "darkMode.css"
       ],
       "js": [
         "content.js"

@@ -3,7 +3,7 @@ javascript: (function() {
   document.querySelector("#id_term").setAttribute("style", "width: 252px;");
   document
     .querySelector(".header-sitenav .subscribe a")
-    .setAttribute("style", "color: #00ccff;");
+    .setAttribute("style", "color: #39d;");
 
   var pageBackground = document.querySelector("#panel");
   if (pageBackground) {
@@ -27,7 +27,7 @@ javascript: (function() {
   var activeLinkText = document.getElementsByClassName("title");
   if (activeLinkText) {
     for (var i = 0; i < activeLinkText.length; i++) {
-      activeLinkText[i].setAttribute("style", "color: #1da1f2;");
+      activeLinkText[i].setAttribute("style", "color: #39d;"); // Twitter blue.
     }
   }
 
@@ -37,7 +37,7 @@ javascript: (function() {
     for (var i = 0; i < articleWrapper.length; i++) {
       articleWrapper[i].setAttribute(
         "style",
-        "background: #424242 !important;"
+        "background: #424242 !important; overflow: hidden;"
       );
     }
   }
@@ -84,12 +84,41 @@ javascript: (function() {
     videoArchive.setAttribute("style", "background: #424242 !important;");
   }
 
+  var nextVideoBox = document.querySelector('section.more');
+  if (nextVideoBox) {
+    nextVideoBox.remove();
+  }
+
+  // Replace all the premium flag images with pure CSS
+  var articlePremiumContainer = document.querySelectorAll("article");
+  if (articlePremiumContainer) {
+    for (var i = 0; i < articlePremiumContainer.length; i++) {
+      if (articlePremiumContainer[i].classList.contains("is_premium_content")) {
+        articlePremiumContainer[i].querySelector("img.prem-flag").remove();
+
+        var premiumFlag = document.createElement("div");
+        premiumFlag.innerHTML = "PREMIUM";
+        premiumFlag.setAttribute(
+          "style",
+          "overflow: hidden; width: 150px; background: #39d; position: absolute; top: 20px; left: -50px; text-align: center; line-height: 25px; color: #f0f0f0; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); font-weight: bold; top: 20px; right: -45px; left: auto; transform: rotate(45deg); -webkit-transform: rotate(45deg);"
+        );
+        articlePremiumContainer[i].insertBefore(
+          premiumFlag,
+          articlePremiumContainer[i].childNodes[0]
+        );
+      }
+    }
+  }
+
   // // The stupid NEXT VIDEO Promo box code:
+  // // .
   // var promoBox = document.querySelector('.js-promo-container');
   // if (promoBox) {
+  //   // Grabs the selector that houses your content
   //   var contentToMove = document.querySelector(
   //     ".js-promo-container section.more"
   //   );
+  //   // Creates a copy of that content
   //   var cloneContent = contentToMove.cloneNode(true);
 
   //   // Create the aside element to put the content into
@@ -97,18 +126,25 @@ javascript: (function() {
   //     .querySelector(".js-promo-container .l-row-fixed-fluid")
   //     .appendChild(document.createElement("aside"));
 
+  //   // Gives the new aside container the correct style
   //   newAsideBox.setAttribute("class", "l-col-fixed");
+  //   // Adds the cloned content into the aside container
   //   newAsideBox.appendChild(cloneContent);
 
+  //   // Removes the original content from the old container (or else it'd be a duplicate)
   //   document.querySelector(
   //     ".js-promo-container .l-row-fixed-fluid section.more"
   //   ).remove();
 
+  //   // Adds another selector to the promo container
   //   document
   //     .querySelector(".js-promo-container .more")
   //     .classList.add("promo-more");
 
+  //   // Grabs the container by selector 'promo-more' and removes the '.more' selector
   //   document.querySelector(".promo-more").classList.remove("more");
+
+  //   // Applies new style to the 'promo-more' container
   //   document
   //     .querySelector(".promo-more")
   //     .setAttribute(
@@ -116,7 +152,6 @@ javascript: (function() {
   //       "-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background: #f000000;min-height: 100px;padding-left: 0px;position: absolute;bottom: 25px;width: 350px;padding-top: 0px;top: 630px;height: 190px;"
   //     );
   // }
-
 
   // Below applies styling to pages that contain 'feature-publishable-video' selector
   var hasFeatureVideo = document.querySelector(".featured-publishable-video");
@@ -130,7 +165,7 @@ javascript: (function() {
       premiumTile.setAttribute("class", "well-subheader");
       premiumTile.setAttribute(
         "style",
-        "color: #00ccff; border-style: solid; border-width: 1px; border-color: #00ccff;"
+        "color: #39d; border-style: solid; border-width: 1px; border-color: #39d;"
       );
       premVidContainer.appendChild(premiumTile);
     }
