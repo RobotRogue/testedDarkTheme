@@ -4,6 +4,14 @@ javascript: (function() {
   document
     .querySelector(".header-sitenav .subscribe a")
     .setAttribute("style", "color: #39d;");
+  document
+    .querySelector('.subscribe.dropdown .dropdown-menu a[href="/premium/"]')
+    .setAttribute("style", "color: #39d;");
+  document
+    .querySelector(
+      '.subscribe.dropdown a[href="/subscriptions/plan-choose/"]'
+    )
+    .setAttribute("style", "color: #39d;");
 
   var pageBackground = document.querySelector("#panel");
   if (pageBackground) {
