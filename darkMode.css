@@ -41,3 +41,46 @@
 .corner-ribbon.red{background: #e43;}
 .corner-ribbon.orange{background: #e82;}
 .corner-ribbon.yellow{background: #ec0;}
+
+a {
+    background: transparent;
+    color: #cacaca;
+}
+
+.comment-count,
+.byline .comment-count {
+    display: inline-block;
+    font: bold 13px/20px Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    color: #e05e00 !important;
+}
+
+.podcast-player .player {
+    color: #aaa;
+    height: 50px;
+    font: bold 18px Arial, Helvetica, sans-serif;
+    padding: 0;
+    position: relative;
+    background: #ffb732;
+}
+
+.js-needs-comment-count,
+.byline .btn {
+  color: #000 !important;
+}
+
+article.spread .author {
+    font: italic 25px / 1.4 Georgia, Cambria, "Times New Roman", Times, serif;
+    color: #e05e00;
+}
+
+.header-sitenav .subscribe a {
+    color: #39d !important;
+}
+
+.publishable .byline {
+    display: block;
+    margin: 10px 0 20px;
+    color: #e05e00 !important;
+}

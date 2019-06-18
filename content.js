@@ -1,17 +1,6 @@
 javascript: (function() {
   // Modifies styling on every page regardless
   document.querySelector("#id_term").setAttribute("style", "width: 252px;");
-  document
-    .querySelector(".header-sitenav .subscribe a")
-    .setAttribute("style", "color: #39d;");
-  document
-    .querySelector('.subscribe.dropdown .dropdown-menu a[href="/premium/"]')
-    .setAttribute("style", "color: #39d;");
-  document
-    .querySelector(
-      '.subscribe.dropdown a[href="/subscriptions/plan-choose/"]'
-    )
-    .setAttribute("style", "color: #39d;");
 
   var pageBackground = document.querySelector("#panel");
   if (pageBackground) {
@@ -25,7 +14,7 @@ javascript: (function() {
     "section.podcast-player .player"
   );
   if (podcastPlayer) {
-    podcastPlayer.setAttribute("style", "background: #39d;");
+    podcastPlayer.setAttribute("style", "background: #ffb732;");
   }
 
   var titleBar = document.querySelector("section.upper");
@@ -215,10 +204,10 @@ javascript: (function() {
       author.setAttribute("style", "color: #e05e00;");
     }
 
-    var commentCounter = document.querySelector("a.comment-count");
-    if (commentCounter) {
-      commentCounter.setAttribute("style", "color: #e05e00;");
-    }
+    // var commentCounter = document.querySelector("a.comment-count");
+    // if (commentCounter) {
+    //   commentCounter.setAttribute("style", "color: #e05e00;");
+    // }
 
     var descriptionText = document.querySelector(".description");
     if (descriptionText) {

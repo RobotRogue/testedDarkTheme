@@ -42,7 +42,8 @@ body {
 }
 
 a {
-    background: transparent
+    background: transparent;
+    color: #cacaca;
 }
 
 a:focus {
@@ -1832,7 +1833,8 @@ article.spread h1 {
 }
 
 article.spread .author {
-    font: italic 25px / 1.4 Georgia, Cambria, "Times New Roman", Times, serif
+    font: italic 25px / 1.4 Georgia, Cambria, "Times New Roman", Times, serif;
+    color: #e05e00;
 }
 
 @media only screen and (max-width: 480px) {
@@ -2476,7 +2478,8 @@ button[type='submit']:hover {
     display: inline-block;
     font: bold 13px/20px Arial, Helvetica, sans-serif;
     position: relative;
-    text-align: center
+    text-align: center;
+    color: #e05e00;
 }
 
 .comment-count:before {
@@ -3945,7 +3948,8 @@ h4.billing {
 
 .publishable .byline {
     display: block;
-    margin: 10px 0 20px
+    margin: 10px 0 20px;
+    color: #e05e00;
 }
 
 .publishable .comment-count {
@@ -9245,7 +9249,8 @@ html.touch .forum-thread-post .actions {
     height: 50px;
     font: bold 18px Arial, Helvetica, sans-serif;
     padding: 0;
-    position: relative
+    position: relative;
+    background: #ffb732;
 }
 
 .podcast-player .player img {
