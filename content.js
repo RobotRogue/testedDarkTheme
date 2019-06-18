@@ -13,6 +13,13 @@ javascript: (function() {
     );
   }
 
+  var podcastPlayer = document.querySelector(
+    "section.podcast-player .player"
+  );
+  if (podcastPlayer) {
+    podcastPlayer.setAttribute("style", "background: #39d;");
+  }
+
   var titleBar = document.querySelector("section.upper");
   if (titleBar) {
     titleBar.setAttribute("style", "background: #000000 !important;");
@@ -27,7 +34,7 @@ javascript: (function() {
   var activeLinkText = document.getElementsByClassName("title");
   if (activeLinkText) {
     for (var i = 0; i < activeLinkText.length; i++) {
-      activeLinkText[i].setAttribute("style", "color: #39d;"); // Twitter blue.
+      activeLinkText[i].setAttribute("style", "color: #cacaca;"); // Twitter blue.
     }
   }
 
@@ -216,7 +223,7 @@ javascript: (function() {
     }
 
     // var commentsContainer = document.querySelector(
-    //   "#comments section.comments-wrap"
+    //   "section.comments-wrap.well"
     // );
     // if (commentsContainer) {
     //   commentsContainer.setAttribute(
