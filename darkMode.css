@@ -4,8 +4,9 @@
 
 /* Ribbon Base */
 .corner-ribbon{
+  overflow: hidden;
   width: 150px;
-  background: #e43;
+  background: #39d;
   position: absolute;
   top: 20px;
   left: -50px;
@@ -16,31 +17,12 @@
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   font-weight: bold;
-  font-size: .6em;
-}
-/* Ribbon Custom Styles */
-.corner-ribbon.sticky{
-  position: fixed;
-}
-/* Ribbon Position */
-.corner-ribbon.top-right{
   top: 25px;
   right: -40px;
   left: auto;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-/* Ribbon Colors */
-.corner-ribbon.white{background: #f0f0f0; color: #555;}
-.corner-ribbon.black{background: #333;}
-.corner-ribbon.grey{background: #999;}
-.corner-ribbon.blue{background: #39d;}
-.corner-ribbon.green{background: #2c7;}
-.corner-ribbon.turquoise{background: #1b9;}
-.corner-ribbon.purple{background: #95b;}
-.corner-ribbon.red{background: #e43;}
-.corner-ribbon.orange{background: #e82;}
-.corner-ribbon.yellow{background: #ec0;}
 
 a {
     background: transparent;

@@ -102,10 +102,7 @@ javascript: (function() {
 
         var premiumFlag = document.createElement("div");
         premiumFlag.innerHTML = "PREMIUM";
-        premiumFlag.setAttribute(
-          "style",
-          "overflow: hidden; width: 150px; background: #39d; position: absolute; top: 20px; left: -50px; text-align: center; line-height: 25px; color: #f0f0f0; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); font-weight: bold; top: 20px; right: -45px; left: auto; transform: rotate(45deg); -webkit-transform: rotate(45deg);"
-        );
+        premiumFlag.setAttribute("class", "corner-ribbon");
         articlePremiumContainer[i].insertBefore(
           premiumFlag,
           articlePremiumContainer[i].childNodes[0]
@@ -204,11 +201,6 @@ javascript: (function() {
       author.setAttribute("style", "color: #e05e00;");
     }
 
-    // var commentCounter = document.querySelector("a.comment-count");
-    // if (commentCounter) {
-    //   commentCounter.setAttribute("style", "color: #e05e00;");
-    // }
-
     var descriptionText = document.querySelector(".description");
     if (descriptionText) {
       descriptionText.setAttribute("style", "color: white;");
@@ -218,15 +210,5 @@ javascript: (function() {
     if (promoCarousel) {
       promoCarousel.setAttribute("style", "background: #424242 !important;");
     }
-
-    // var commentsContainer = document.querySelector(
-    //   "section.comments-wrap.well"
-    // );
-    // if (commentsContainer) {
-    //   commentsContainer.setAttribute(
-    //     "style",
-    //     "background: #424242 !important;"
-    //   );
-    // }
   }
 })();
