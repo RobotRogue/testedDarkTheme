@@ -47,10 +47,10 @@ a {
     background: #ffb732;
 }
 
-.js-needs-comment-count,
+/* .js-needs-comment-count,
 .byline .btn {
   color: #000 !important;
-}
+} */
 
 article.spread .author {
     font: italic 25px / 1.4 Georgia, Cambria, "Times New Roman", Times, serif;
@@ -74,4 +74,37 @@ article.spread .author {
 .publishable {
     background: #424242 !important;
     overflow: hidden;
+}
+
+.well{
+    background: #424242 !important;
+}
+
+.parchment-content,
+.description {
+    color: #f1f1f1 !important;
+}
+
+a.username {
+    color: #ffffff !important;
+}
+
+time,
+time a,
+.board,
+.topic-info,
+.forum-topics-browse h1,
+.cell-name,
+a[href*="/profile"],
+a[href="?using=last_commented"],
+a[href="?using=most_viewed"],
+a[href="?using=most_commented"],
+.cell-count .views,
+.forum-thread-header,
+.forum-thread-header > .started {
+    color: #ffffff !important;
+}
+
+a[href*="/forums"] {
+    color: #ffb732;
 }

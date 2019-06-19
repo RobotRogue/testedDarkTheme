@@ -51,12 +51,12 @@ javascript: (function() {
     adSpamBlock.setAttribute("style", "display: none");
   }
 
-  var articleText = document.getElementsByClassName("parchment-content");
-  if (articleText) {
-    for (var i = 0; i < articleText.length; i++) {
-      articleText[i].setAttribute("style", "color: #cacaca !important;");
-    }
-  }
+  // var articleText = document.getElementsByClassName("parchment-content");
+  // if (articleText) {
+  //   for (var i = 0; i < articleText.length; i++) {
+  //     articleText[i].setAttribute("style", "color: #cacaca !important;");
+  //   }
+  // }
 
   var recentVideos = document.querySelector("section.recent-videos");
   if (recentVideos) {
