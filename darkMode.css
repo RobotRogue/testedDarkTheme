@@ -159,8 +159,9 @@ button[type='submit'] {
     color: #4db8ff !important
 }
 
-.featured-publishable-podcast .author {
-    color: #fff !important;
+.featured-publishable-podcast .author,
+.featured-publishable-podcast .author time {
+    color: #39d !important;
 }
 
 .tabs .on a {
@@ -263,11 +264,12 @@ section.upper {
     display: none !important;
 }
 
-.featured-publishable span.author {
+.featured-publishable .author,
+.featured-publishable .author time {
     color: #39d !important;
 }
 
-.well-header,{
+.well-header {
     border-style: solid;
     border-width: 1px;
     border-color: rgba(112,112,112,1);
