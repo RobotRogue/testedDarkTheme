@@ -105,8 +105,12 @@ a[href="?using=most_commented"],
     color: #ffffff !important;
 }
 
-a[href*="/forums"] {
+/* a[href*="/forums"] {
     color: #ffb732;
+} */
+
+a[href*="/forums"] {
+    color: #4db8ff;
 }
 
 .btn,
@@ -144,4 +148,36 @@ button[type='submit'] {
 
 a[href="/podcast/"] {
     color: #4db8ff !important
+}
+
+.featured-publishable-podcast .author,
+.featured-publishable-podcast .title a {
+    color: #fff !important;
+}
+
+.tabs .on a {
+    color: #39d !important;
+}
+
+.comments-wrap .well-subheader {
+    background: #4db8ff !important;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.aside-contact {
+    color: #4db8ff !important;
+}
+
+.header-social {
+    float: left !important;
+}
+
+td.cell-count {
+    color: #fff !important;
+}
+
+[for="id_title"],
+[for="id_category"] {
+    color: #39d !important;
 }
