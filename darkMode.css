@@ -255,7 +255,7 @@ a.view-all {
     color: #f46253 !important;
 }
 
-.section.upper {
+section.upper {
     background: #000000 !important;
 }
 
@@ -283,4 +283,12 @@ a.view-all {
 .js-comment-focus,
 .well-header-wrap a.comment-response.comment-reply {
     color: #fff !important;
+}
+
+#panel {
+    background: url(https://d2rormqr1qwzpz.cloudfront.net/static/site/img/layout/bg-grid-alt.png) #101010 !important;
+}
+
+#id_term {
+    width: 252px;
 }
