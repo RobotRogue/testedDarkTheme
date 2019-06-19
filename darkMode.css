@@ -276,14 +276,17 @@ section.upper {
 }
 
 .well-subheader {
-    /* border-style: solid;
+    border-style: solid;
     border-width: 1px;
-    border-color: #f46253; */
+    border-color: #f46253;
     color: #f46253 !important;
 }
 
 .js-comment-focus,
 .well-header-wrap a.comment-response.comment-reply {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #808080;
     color: #fff !important;
 }
 
