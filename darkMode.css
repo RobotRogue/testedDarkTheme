@@ -67,8 +67,9 @@ article.spread .author {
     color: #39d !important;
 }
 
-.title {
-    color: #cacaca;
+.title,
+.title a {
+    color: #cacaca !important;
 }
 
 .publishable {
@@ -158,8 +159,7 @@ button[type='submit'] {
     color: #4db8ff !important
 }
 
-.featured-publishable-podcast .author,
-.featured-publishable-podcast .title a {
+.featured-publishable-podcast .author {
     color: #fff !important;
 }
 
