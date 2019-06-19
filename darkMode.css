@@ -154,7 +154,7 @@ button[type='submit'] {
     color: #39d !important;
 }
 
-a[href="/podcast/"] {
+.breadcrumbs a[href*="podcast"] {
     color: #4db8ff !important
 }
 
@@ -192,4 +192,77 @@ td.cell-count {
 
 section.podcast-player .player {
     background: #808080 !important;
+}
+
+.happening-now .highlight {
+    color: #f46253 !important;
+}
+
+.header-sitenav *:hover,
+.header-sitenav .on>a {
+    color: #f46253 !important;
+}
+
+.header-sitenav .subscribe a:hover {
+    color: #f46253 !important;
+}
+
+.header-sitenav .dropdown:hover:after {
+    border-top: 4px solid #f46253 !important;
+}
+
+.l-header .header-user a:hover {
+    color: #f46253 !important;
+}
+
+.l-header .header-user .notify .dropdown-menu .view-all:hover {
+    background: #f46253 !important;
+}
+
+.archive .browse .dropdown-menu a:hover {
+    color: #f46253 !important;
+}
+
+.badge {
+    color: #f46253 !important;
+}
+
+.search-results-list .category a:hover {
+    color: #f46253 !important;
+}
+
+.well-header a:hover,
+.well-subheader a:hover,
+.object-related header a:hover {
+    color: #f46253 !important;
+}
+
+/* .well-subheader {
+    color: #f46253 !important;
+} */
+
+a.view-all {
+    background: #4db8ff !important;
+}
+
+.forum-thread-post .comment-reply,
+.forum-thread-post .comment-quote {
+    color: #39d !important;
+}
+
+.parchment-content a,
+.description a {
+    color: #f46253 !important;
+}
+
+.section.upper {
+    background: #000000 !important;
+}
+
+.l-header section.lower .header-social {
+    display: none !important;
+}
+
+.featured-publishable span.author {
+    color: #39d !important;
 }

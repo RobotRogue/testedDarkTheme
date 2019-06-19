@@ -34,36 +34,10 @@ javascript: (function() {
     popularNews.setAttribute("style", "background: #424242 !important;");
   }
 
-  // // Warning: This is inherently very slow to run.
-  // var activeLinkText = document.getElementsByClassName("title");
-  // if (activeLinkText) {
-  //   for (var i = 0; i < activeLinkText.length; i++) {
-  //     activeLinkText[i].setAttribute("style", "color: #cacaca;"); // Twitter blue.
-  //   }
-  // }
-
-  // // Warning: This is inherently very slow to run.
-  // var articleWrapper = document.getElementsByClassName("publishable");
-  // if (articleWrapper) {
-  //   for (var i = 0; i < articleWrapper.length; i++) {
-  //     articleWrapper[i].setAttribute(
-  //       "style",
-  //       "background: #424242 !important; overflow: hidden;"
-  //     );
-  //   }
-  // }
-
   var adSpamBlock = document.querySelector("aside.l-lastcol section.well");
   if (adSpamBlock) {
     adSpamBlock.setAttribute("style", "display: none");
   }
-
-  // var articleText = document.getElementsByClassName("parchment-content");
-  // if (articleText) {
-  //   for (var i = 0; i < articleText.length; i++) {
-  //     articleText[i].setAttribute("style", "color: #cacaca !important;");
-  //   }
-  // }
 
   var recentVideos = document.querySelector("section.recent-videos");
   if (recentVideos) {
@@ -118,68 +92,6 @@ javascript: (function() {
     }
   }
 
-  // var articlePremiumContainer = document.querySelectorAll(
-  //   ".js-promo-container.link-publishable.is_premium_content"
-  // );
-  // if (articlePremiumContainer) {
-  //   for (var i = 0; i < articlePremiumContainer.length; i++) {
-  //     if (articlePremiumContainer[i].classList.contains("is_premium_content")) {
-  //       articlePremiumContainer[i].querySelector("img.prem-flag").remove();
-
-  //       var premiumFlag = document.createElement("div");
-  //       premiumFlag.innerHTML = "PREMIUM";
-  //       premiumFlag.setAttribute("class", "corner-ribbon");
-  //       articlePremiumContainer[i].insertBefore(
-  //         premiumFlag,
-  //         articlePremiumContainer[i].childNodes[0]
-  //       );
-  //     }
-  //   }
-  // }
-
-  // // The stupid NEXT VIDEO Promo box code:
-  // // .
-  // var promoBox = document.querySelector('.js-promo-container');
-  // if (promoBox) {
-  //   // Grabs the selector that houses your content
-  //   var contentToMove = document.querySelector(
-  //     ".js-promo-container section.more"
-  //   );
-  //   // Creates a copy of that content
-  //   var cloneContent = contentToMove.cloneNode(true);
-
-  //   // Create the aside element to put the content into
-  //   var newAsideBox = document
-  //     .querySelector(".js-promo-container .l-row-fixed-fluid")
-  //     .appendChild(document.createElement("aside"));
-
-  //   // Gives the new aside container the correct style
-  //   newAsideBox.setAttribute("class", "l-col-fixed");
-  //   // Adds the cloned content into the aside container
-  //   newAsideBox.appendChild(cloneContent);
-
-  //   // Removes the original content from the old container (or else it'd be a duplicate)
-  //   document.querySelector(
-  //     ".js-promo-container .l-row-fixed-fluid section.more"
-  //   ).remove();
-
-  //   // Adds another selector to the promo container
-  //   document
-  //     .querySelector(".js-promo-container .more")
-  //     .classList.add("promo-more");
-
-  //   // Grabs the container by selector 'promo-more' and removes the '.more' selector
-  //   document.querySelector(".promo-more").classList.remove("more");
-
-  //   // Applies new style to the 'promo-more' container
-  //   document
-  //     .querySelector(".promo-more")
-  //     .setAttribute(
-  //       "style",
-  //       "-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;background: #f000000;min-height: 100px;padding-left: 0px;position: absolute;bottom: 25px;width: 350px;padding-top: 0px;top: 630px;height: 190px;"
-  //     );
-  // }
-
   // Below applies styling to pages that contain 'feature-publishable-video' selector
   var hasFeatureVideo = document.querySelector(".featured-publishable-video");
   if (hasFeatureVideo) {
@@ -212,29 +124,29 @@ javascript: (function() {
       videoBlurb.className = "l-col-fluid";
     }
 
-    var articleContainer = document.querySelector(".featured-publishable");
-    if (articleContainer) {
-      articleContainer.setAttribute("style", "background: #424242 !important;");
-    }
+    // var articleContainer = document.querySelector(".featured-publishable");
+    // if (articleContainer) {
+    //   articleContainer.setAttribute("style", "background: #424242 !important;");
+    // }
 
-    var descriptionTitle = document.querySelector("a.title");
-    if (descriptionTitle) {
-      descriptionTitle.setAttribute("style", "color: #cacaca;");
-    }
+    // var descriptionTitle = document.querySelector("a.title");
+    // if (descriptionTitle) {
+    //   descriptionTitle.setAttribute("style", "color: #cacaca;");
+    // }
 
-    var author = document.querySelector("span.author");
-    if (author) {
-      author.setAttribute("style", "color: #e05e00;");
-    }
+    // var author = document.querySelector("span.author");
+    // if (author) {
+    //   author.setAttribute("style", "color: #e05e00;");
+    // }
 
-    var descriptionText = document.querySelector(".description");
-    if (descriptionText) {
-      descriptionText.setAttribute("style", "color: white;");
-    }
+    // var descriptionText = document.querySelector(".description");
+    // if (descriptionText) {
+    //   descriptionText.setAttribute("style", "color: white;");
+    // }
 
-    var promoCarousel = document.querySelector(".promo-carousel-revamp");
-    if (promoCarousel) {
-      promoCarousel.setAttribute("style", "background: #424242 !important;");
-    }
+    // var promoCarousel = document.querySelector(".promo-carousel-revamp");
+    // if (promoCarousel) {
+    //   promoCarousel.setAttribute("style", "background: #424242 !important;");
+    // }
   }
 })();
