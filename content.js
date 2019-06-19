@@ -14,7 +14,7 @@ javascript: (function() {
     "section.podcast-player .player"
   );
   if (podcastPlayer) {
-    podcastPlayer.setAttribute("style", "background: #ffb732;");
+    podcastPlayer.setAttribute("style", "background: #808080;");
   }
 
   var titleBar = document.querySelector("section.upper");

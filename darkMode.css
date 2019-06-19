@@ -35,7 +35,7 @@ a {
     font: bold 13px/20px Arial, Helvetica, sans-serif;
     position: relative;
     text-align: center;
-    color: #e05e00 !important;
+    color: #39d !important;
 }
 
 .podcast-player .player {
@@ -44,7 +44,7 @@ a {
     font: bold 18px Arial, Helvetica, sans-serif;
     padding: 0;
     position: relative;
-    background: #ffb732;
+    background: #808080;
 }
 
 /* .js-needs-comment-count,
@@ -54,7 +54,7 @@ a {
 
 article.spread .author {
     font: italic 25px / 1.4 Georgia, Cambria, "Times New Roman", Times, serif;
-    color: #e05e00;
+    color: #39d;
 }
 
 .header-sitenav .subscribe a {
@@ -64,7 +64,7 @@ article.spread .author {
 .publishable .byline {
     display: block;
     margin: 10px 0 20px;
-    color: #e05e00 !important;
+    color: #39d !important;
 }
 
 .title {
@@ -107,4 +107,41 @@ a[href="?using=most_commented"],
 
 a[href*="/forums"] {
     color: #ffb732;
+}
+
+.btn,
+button[type='submit'] {
+    box-shadow: -3px 3px 0 #999999, -2px 2px #999999, -1px 1px 0 #999999 !important;
+    -moz-box-shadow: -3px 3px 0 #999999, -2px 2px #999999, -1px 1px 0 #999999 !important;
+    -ms-box-shadow: -3px 3px 0 #999999, -2px 2px #999999, -1px 1px 0 #999999 !important;
+    -o-box-shadow: -3px 3px 0 #999999, -2px 2px #999999, -1px 1px 0 #999999 !important;
+    -webkit-box-shadow: -3px 3px 0 #999999, -2px 2px #999999, -1px 1px 0 #999999 !important;
+    background: #808080 !important;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font: 20px/1em "FontSite Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+    padding: 5px 10px;
+    text-transform: uppercase
+}
+
+.comment-count:before {
+    background: rgba(0,0,0,0) !important;
+}
+
+.create-topic {
+    color: #fff !important;
+}
+
+.podcast-player .ui-slider-handle {
+    border: 8px solid #fff !important;
+}
+
+.header-search label {
+    color: #39d !important;
+}
+
+a[href="/podcast/"] {
+    color: #4db8ff !important
 }
