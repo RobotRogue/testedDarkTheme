@@ -10,6 +10,7 @@ javascript: (function() {
     );
   }
 
+  // This bit will update their existing Social links with more up to date ones... (not dont yet)
   // var socialLinks = document.querySelector(
   //   ".header-social.header-social-top"
   // );
@@ -104,7 +105,7 @@ javascript: (function() {
       premiumTile.setAttribute("class", "well-subheader");
       premiumTile.setAttribute(
         "style",
-        "color: #39d; border-style: solid; border-width: 1px; border-color: #39d;"
+        "color: #39d !important; border-style: solid; border-width: 1px; border-color: #39d;"
       );
       premVidContainer.appendChild(premiumTile);
     }
