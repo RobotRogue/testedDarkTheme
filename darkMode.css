@@ -74,10 +74,18 @@ article.spread .author {
 .publishable {
     background: #424242 !important;
     overflow: hidden;
+    border-radius: 6px !important;
+    -webkit-box-shadow: -2px 2px 0px 0px rgba(112,112,112,1) !important;
+    -moz-box-shadow: -2px 2px 0px 0px rgba(112,112,112,1) !important;
+    box-shadow: -2px 2px 0px 0px rgba(112,112,112,1) !important;
 }
 
 .well{
     background: #424242 !important;
+    border-radius: 6px !important;
+    -webkit-box-shadow: -2px 2px 0px 0px rgba(112,112,112,1) !important;
+    -moz-box-shadow: -2px 2px 0px 0px rgba(112,112,112,1) !important;
+    box-shadow: -2px 2px 0px 0px rgba(112,112,112,1) !important;
 }
 
 .parchment-content,
@@ -180,4 +188,8 @@ td.cell-count {
 [for="id_title"],
 [for="id_category"] {
     color: #39d !important;
+}
+
+section.podcast-player .player {
+    background: #808080 !important;
 }

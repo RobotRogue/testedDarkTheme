@@ -10,11 +10,18 @@ javascript: (function() {
     );
   }
 
-  var podcastPlayer = document.querySelector(
-    "section.podcast-player .player"
+  // var socialLinks = document.querySelector(
+  //   ".header-social.header-social-top"
+  // );
+  // if (socialLinks) {
+  //   socialLinks.innerHTML = '<a href="http://www.google.com/>lul</a>'
+  // }
+
+  var removeGooglePlus = document.querySelector(
+    'a[href*="plus.google.com"][rel="publisher"]'
   );
-  if (podcastPlayer) {
-    podcastPlayer.setAttribute("style", "background: #808080;");
+  if (removeGooglePlus) {
+    removeGooglePlus.remove();
   }
 
   var titleBar = document.querySelector("section.upper");
