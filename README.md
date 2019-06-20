@@ -13,3 +13,8 @@ Code for my 'tested.com resize video player and darken the page css a bit - auto
 3) Click the LOAD UNPACKED button and select the extension directory.
 
 Voila! It's now installed! And you will get to see how horribly I broke the rest of the site. But the video pages will look cool!
+
+## Before and After Video!
+
+gif: http://g.recordit.co/lBLQPBMs9n.gif
+video: http://recordit.co/lBLQPBMs9n
