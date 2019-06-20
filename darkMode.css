@@ -183,10 +183,6 @@ button[type='submit'] {
     color: #4db8ff !important;
 }
 
-.header-social {
-    float: left !important;
-}
-
 td.cell-count {
     color: #fff !important;
 }
@@ -309,4 +305,25 @@ section.upper {
 
 .featured-publishable-video .info {
     width: 1000px;
+}
+
+.header-social {
+
+}
+
+.list-inline {
+    margin-top: 5px !important;
+}
+
+.list-inline ul {
+    list-style-type: none !important;
+}
+
+.list-inline li {
+    display: inline !important;
+    margin-left: 7px;
+}
+
+.list-inline a {
+    color: #ffffff !important;
 }
