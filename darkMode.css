@@ -24,10 +24,15 @@
   -webkit-transform: rotate(45deg);
 }
 
-a {
+/* a {
     background: transparent;
-    color: #cacaca;
-}
+    color: #ececec;
+} */
+
+/* a {
+    background: transparent;
+    color: #92c8ed;
+} */
 
 .comment-count,
 .byline .comment-count {
@@ -69,7 +74,7 @@ article.spread .author {
 
 .title,
 .title a {
-    color: #cacaca !important;
+    color: #92c8ed !important;
 }
 
 .publishable {
@@ -296,4 +301,8 @@ section.upper {
 
 #id_term {
     width: 252px;
+}
+
+.editor {
+    color: #000000 !important;
 }
