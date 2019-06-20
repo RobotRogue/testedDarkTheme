@@ -25,9 +25,9 @@ javascript: (function() {
     oolaya.setAttribute("style", "display: none");
   }
 
-  var killNextVideoBox = document.querySelector("section.more");
-  if (killNextVideoBox) {
-    killNextVideoBox.remove();
+  var hideNextVideoBox = document.querySelector("section.more");
+  if (hideNextVideoBox) {
+    hideNextVideoBox.remove();
   }
 
   // Replace all the premium flag images with pure CSS
