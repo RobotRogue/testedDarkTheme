@@ -11,6 +11,26 @@ javascript: (function() {
     pageHead.appendChild(fontAwesome);
   }
 
+  var emailIcon = document.querySelector('[data-icon-after="m"]');
+  if (emailIcon) {
+    var newEmailIcon = document.createElement('i');
+    newEmailIcon.setAttribute("class", "far fa-envelope fa-lg")
+    newEmailIcon.setAttribute("style", "color: #fff; padding-top: 3px;");
+    emailIcon.appendChild(newEmailIcon);
+
+    emailIcon.removeAttribute("data-icon-after");
+  }
+
+  var commentsIcon = document.querySelector('[data-icon-after="c"]');
+  if (commentsIcon) {
+    var newCommentIcon = document.createElement("i");
+    newCommentIcon.setAttribute("class", "far fa-comment-alt fa-lg");
+    newCommentIcon.setAttribute("style", "color: #fff; padding-top: 3px;");
+    commentsIcon.appendChild(newCommentIcon);
+
+    commentsIcon.removeAttribute("data-icon-after");
+  }
+
   var socialLinks = document.querySelector(
     ".header-social.header-social-top"
   );
