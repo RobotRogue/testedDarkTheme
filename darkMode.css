@@ -306,3 +306,7 @@ section.upper {
 .editor {
     color: #000000 !important;
 }
+
+.featured-publishable-video .info {
+    width: 1000px;
+}

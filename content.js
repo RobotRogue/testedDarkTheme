@@ -7,6 +7,12 @@ javascript: (function() {
   //   socialLinks.innerHTML = '<a href="http://www.google.com/>lul</a>'
   // }
   // SVG Author Credit: <div>Icons made by <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  // OR USE THESE FONTAWESOME ICONS INSTEAD:
+  // https://fontawesome.com/icons/facebook-square?style=brands <i class="fab fa-facebook-square"></i>
+  // https://fontawesome.com/icons/youtube-square?style=brands (<i class="fab fa-youtube-square"></i>)
+  // https://fontawesome.com/icons/rss-square?style=solid (<i class="fas fa-rss-square"></i>)
+  // https://fontawesome.com/icons/instagram?style=brands (<i class="fab fa-instagram"></i>)
+  // https://fontawesome.com/icons/twitter-square?style=brands (<i class="fab fa-twitter-square"></i>)
 
   var removeGooglePlus = document.querySelector(
     'a[href*="plus.google.com"][rel="publisher"]'
