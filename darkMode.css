@@ -327,3 +327,8 @@ section.upper {
 .list-inline a {
     color: #ffffff !important;
 }
+
+*:focus {
+    outline: 0;
+    outline-color: transparent;
+}
