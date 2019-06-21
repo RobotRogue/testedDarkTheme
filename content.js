@@ -11,6 +11,19 @@ javascript: (function() {
     pageHead.appendChild(fontAwesome);
   }
 
+  document.onkeyup = function(e) {
+    if (e.ctrlKey && e.shiftKey && e.which == 69) {
+      alert("chrome://extensions/");
+    }
+  };
+
+  // var promoVideo = document.querySelector(
+  //   ".js-promo-container .featured-publishable-video"
+  // );
+  // if (promoVideo) {
+  //   promoVideo.classList.add("corner-ribbon");
+  // }
+
   var emailIcon = document.querySelector('[data-icon-after="m"]');
   if (emailIcon) {
     var newEmailIcon = document.createElement('i');
