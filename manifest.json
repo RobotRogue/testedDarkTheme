@@ -16,9 +16,5 @@
         "https://www.tested.com/*"
       ]
     }
-  ],
-  "permissions": [
-    "https://*.tested.com/",
-    "activeTab"
   ]
 }
