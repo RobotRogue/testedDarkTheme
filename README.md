@@ -12,9 +12,13 @@ Code for my 'tested.com resize video player and darken the page css a bit - auto
 2) Enable Developer Mode by clicking the toggle switch next to Developer mode.
 3) Click the LOAD UNPACKED button and select the extension directory.
 
-Voila! It's now installed! And you will get to see how horribly I broke the rest of the site. But the video pages will look cool!
+Voila! It's now installed!
 
-## Before and After Video!
+## Notes:
+There are a lot of pages I have not touched yet (signup page, permium signup page, various user/account pages, and the occasional one I likely missed along the way) - I plan to do those in the future, but the bulk of the work is done and I'm satisfied enough to release what I have done so far.
 
-gif: http://g.recordit.co/lBLQPBMs9n.gif
-video: http://recordit.co/lBLQPBMs9n
+The code isn't the cleanest. This is my first kick at the can and I am sure there are way better ways to handle things. If you have suggestions, open an issue with your suggestions.
+
+If you really want me to fix something, also open an issue.
+
+And lastly, thanks for viewing my work!
