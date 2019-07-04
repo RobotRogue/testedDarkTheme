@@ -1,5 +1,5 @@
 javascript: (function() {
-  // This bit will update their existing Social links with more up to date ones... (not dont yet)
+  // This bit will update their existing Social links with more up to date ones
   var pageHead = document.querySelector('head');
   if (pageHead) {
     var fontAwesome = document.createElement("link");
