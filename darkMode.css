@@ -343,3 +343,9 @@ section.upper {
   outline: 0;
   outline-color: transparent;
 }
+
+[data-js="notify"] .badge.small {
+  width: 40%;
+  height: 45%;
+  margin: 5px 5px 7px 17px !important;
+}
