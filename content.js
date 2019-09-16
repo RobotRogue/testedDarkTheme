@@ -24,6 +24,28 @@ javascript: (function() {
   //   promoVideo.classList.add("corner-ribbon");
   // }
 
+  /*
+  // WORK IN PROGRESS...
+  var promoVideo = document.querySelectorAll(
+    ".js-promo-container .featured-publishable-video"
+  );
+  if (promoVideo) {
+    for (var i = 0; i < promoVideo.length; i++) {
+      if (promoVideo[i].classList.contains("is_premium_content")) {
+        promoVideo[i].querySelector("img.prem-flag").remove();
+
+        var premiumFlag = document.createElement("div");
+        premiumFlag.innerHTML = "PREMIUM";
+        premiumFlag.setAttribute("class", "corner-ribbon");
+        promoVideo[i].insertBefore(
+          premiumFlag,
+          promoVideo[i].childNodes[0]
+        );
+      }
+    }
+  }
+  */
+
   var emailIcon = document.querySelector('[data-icon-after="m"]');
   if (emailIcon) {
     var newEmailIcon = document.createElement('i');
