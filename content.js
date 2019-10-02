@@ -1,6 +1,6 @@
 javascript: (function() {
   // This bit will update their existing Social links with more up to date ones
-  var pageHead = document.querySelector('head');
+  var pageHead = document.querySelector("head");
   if (pageHead) {
     var fontAwesome = document.createElement("link");
     fontAwesome.setAttribute("rel", "stylesheet");
@@ -48,8 +48,8 @@ javascript: (function() {
 
   var emailIcon = document.querySelector('[data-icon-after="m"]');
   if (emailIcon) {
-    var newEmailIcon = document.createElement('i');
-    newEmailIcon.setAttribute("class", "far fa-envelope fa-lg")
+    var newEmailIcon = document.createElement("i");
+    newEmailIcon.setAttribute("class", "far fa-envelope fa-lg");
     newEmailIcon.setAttribute("style", "color: #fff; padding-top: 3px;");
     emailIcon.appendChild(newEmailIcon);
 
@@ -66,9 +66,7 @@ javascript: (function() {
     commentsIcon.removeAttribute("data-icon-after");
   }
 
-  var socialLinks = document.querySelector(
-    ".header-social.header-social-top"
-  );
+  var socialLinks = document.querySelector(".header-social.header-social-top");
   if (socialLinks) {
     socialLinks.innerHTML =
       '<ul class="list-inline"><li><a href="https://www.facebook.com/testedcom" target="_blank"><i class="fab fa-facebook-square fa-2x" title="Facebook"></i></a></li><li><a href="https://www.youtube.com/user/testedcom" target="_blank"><i class="fab fa-youtube-square fa-2x" title="YouTube"></i></a></li><li><a href="https://www.tested.com/feeds/" target="_blank"><i class="fas fa-rss-square fa-2x" title="RSS"></i></a></li><li><a href="https://twitter.com/testedcom" target="_blank"><i class="fab fa-twitter-square fa-2x" title="Twitter"></i></a></li><li><a href="https://www.instagram.com/testedcom/" target="_blank"><i class="fab fa-instagram fa-2x" title="Instagram"></i></a></li></ul>';
@@ -84,6 +82,11 @@ javascript: (function() {
   var blockAdSpam = document.querySelector("aside.l-lastcol section.well");
   if (blockAdSpam) {
     blockAdSpam.setAttribute("style", "display: none");
+  }
+
+  var blockAdSpam2 = document.querySelector(".aside-promo");
+  if (blockAdSpam2) {
+    blockAdSpam2.setAttribute("style", "display: none");
   }
 
   var oolaya = document.querySelector('iframe[src*="ooyala"]');
