@@ -69,7 +69,7 @@ javascript: (function() {
   var socialLinks = document.querySelector(".header-social.header-social-top");
   if (socialLinks) {
     socialLinks.innerHTML =
-      '<ul class="list-inline"><li><a href="https://www.facebook.com/testedcom" target="_blank"><i class="fab fa-facebook-square fa-2x" title="Facebook"></i></a></li><li><a href="https://www.youtube.com/user/testedcom" target="_blank"><i class="fab fa-youtube-square fa-2x" title="YouTube"></i></a></li><li><a href="https://www.tested.com/feeds/" target="_blank"><i class="fas fa-rss-square fa-2x" title="RSS"></i></a></li><li><a href="https://twitter.com/testedcom" target="_blank"><i class="fab fa-twitter-square fa-2x" title="Twitter"></i></a></li><li><a href="https://www.instagram.com/testedcom/" target="_blank"><i class="fab fa-instagram fa-2x" title="Instagram"></i></a></li></ul>';
+      '<ul class="list-inline"><li><a href="https://www.instagram.com/testedcom/" target="_blank"><i class="fab fa-instagram fa-2x" title="Instagram"></i></a></li><li><a href="https://www.youtube.com/user/testedcom" target="_blank"><i class="fab fa-youtube-square fa-2x" title="YouTube"></i></a></li><li><a href="https://twitter.com/testedcom" target="_blank"><i class="fab fa-twitter-square fa-2x" title="Twitter"></i></a></li><li><a href="https://www.facebook.com/testedcom" target="_blank"><i class="fab fa-facebook-square fa-2x" title="Facebook"></i></a></li><li><a href="https://www.tested.com/feeds/" target="_blank"><i class="fas fa-rss-square fa-2x" title="RSS"></i></a></li></ul>';
   }
 
   var removeGooglePlus = document.querySelector(
