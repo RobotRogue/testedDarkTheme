@@ -11,7 +11,7 @@ javascript: (function() {
     pageHead.appendChild(fontAwesome);
   }
 
-  document.onkeyup = function(e) {
+  document.onkeydown = function(e) {
     if (e.ctrlKey && e.shiftKey && e.which == 69) {
       alert("chrome://extensions/");
     }
